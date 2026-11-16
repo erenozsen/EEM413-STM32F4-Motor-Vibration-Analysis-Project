@@ -1,6 +1,6 @@
 # Analog Ön Kat (AFE) Değişiklikleri
 
-Son güncelleme: 03.11.2026. Devre breadboard üzerindedir.
+Son güncelleme: 16.11.2026. Devre breadboard üzerindedir.
 
 ## Güncel devre (her kanal aynı)
 
@@ -38,7 +38,8 @@ Piezo soğuk uç ── analog GND              │
 | ADC girişi | 22 kΩ | 22 kΩ + 2×1 nF film | Örtüşme önleme filtresi | 20.10 |
 | Kullanılmayan 4. op-amp kanalı | Boşta | Bias'a bağlı izleyici | Boş kanalın salınmasını önlemek | 20.10 |
 | Y piezosu kablosu | Blendajsız teller, timsah | Blendajlı kablo (damar → seramik, blendaj → pirinç) | 50 Hz girişimi | 01.11 |
-| X ve Z piezosu kablosu | Blendajsız teller, timsah | Aynı blendajlı kablo, timsahlar kısaltıldı | 50 Hz girişimi | 03.11'e kadar (kayıt alınmadı) |
+| X ve Z piezosu kablosu | Blendajsız teller, timsah | Aynı blendajlı kablo, timsahlar kısaltıldı | 50 Hz girişimi | 03.11 (ilk kayıt 16.11) |
+| Breadboard'daki giriş telleri | 15–20 cm açık tel | 2–3 cm; üç blendaj tek GND noktasında | Blendajsız kalan sıcak ucu kısaltmak | 16.11 |
 
 **Cf denemeleri:** 1 nF'ta çıkış ~0,1 V ile küçük kaldı, 220 pF'a inildi, sweep'te kırpılmaması için 470 pF'ta karar kılındı. 18.10 kayıtlarının 220 pF ile mi 470 pF ile mi alındığı bilinmiyor.
 
@@ -68,8 +69,9 @@ Sayılar ve grafikler için [README.md](README.md#ölçüm-sonuçları).
 | Y kanalında darbe aynı oranda düşmedi | 21.10'da 64–88 LSB kaldı. Y'ye özgü kuplaj yolu şüphesi var, doğrulanmadı. |
 | Klavye zincirinde darbe arttı (21.10: 2–15, 01.11: 52–68 LSB) | Nedeni bilinmiyor. |
 | Y'de 47–53 Hz bandı 13–23'ten 6–8 LSB'ye indi | Ölçüldü. Y'nin piezosu da değiştiği için tamamı blendaja bağlanamaz. |
-| Y'de 1–45 Hz gürültü 22–34 LSB'ye çıktı | Blendajlı kablodan sonra görüldü. Kablo hareketi veya montaj şüphesi var. |
-| Tek örnekli çatırtı sürüyor | X'te yaklaşık yarıya indi, Y ve Z'de değişmedi. Blendaj etkilemedi. |
+| Y'de 1–45 Hz gürültü 22–34 LSB'ye çıktı (01.11) | 16.11'de 0,7–0,8 LSB'ye indi. Arada kablo, giriş telleri ve piezo yeri değiştiği için neden belirlenemedi. |
+| 16.11: üç kanal blendajlı, kısa giriş telleri | 47–53 Hz bandı X ~2, Y ~2,5, Z 1,3 LSB (01.11'de 6–12). SD darbesi kapı kapalıyken üç kanalda 7–12 LSB. |
+| Tek örnekli çatırtı | Hiçbir AFE değişikliği çözmedi. Kaynağı SPI saat kenarlarıydı; firmware'deki SPI kapısıyla giderildi (16.11, [README](README.md)). |
 | ADC pinleri sağlam | X/Z kabloları çaprazlanınca sinyal ve darbe kablo zincirini izledi. |
 
 ## Planlanan: MCP6004'e geçiş (yapılmadı)
