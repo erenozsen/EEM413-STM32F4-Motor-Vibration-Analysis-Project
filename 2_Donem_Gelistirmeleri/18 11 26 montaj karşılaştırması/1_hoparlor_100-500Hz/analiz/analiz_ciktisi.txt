@@ -1,0 +1,93 @@
+########## montaj_analiz.py
+yeni_003       Y baskin Hz/s: 50 50 50 50 50 50 50 50 50 100 100 100 100 100 100 100 100 100 100 100 100 100 50 50 50 50 50 50 50 50 50
+               DC orta (ham): 1901 1905 1903
+yeni_004       Y baskin Hz/s: 50 50 50 50 50 50 50 50 50 50 167 478 157 478 157 478 157 478 150 50 50 50 50 50 50 50 50 50 50
+               DC orta (ham): 1902 1909 1902
+1611_sw003     Y baskin Hz/s: 15 50 50 50 50 50 50 50 50 50 50 50 50 255 315 245 341 244 350 146 50 50 50 50 50 50 50 50 50 50
+               DC orta (ham): 1898 1899 1895
+1611_100hz004  Y baskin Hz/s: 50 50 50 50 50 50 50 50 50 50 50 50 100 100 100 100 100 100 100 100 100 100 100 100 100 50 50 50 50 50 50 50 50 50
+               DC orta (ham): 1898 1900 1894
+
+yeni_004: aktif 10.5-17.8 s
+  X: f0 249.38 Hz, harmonikler(LSB) 31.45 13.43 0.66 0.47 0.16 | THD 42.80 %
+  Y: f0 231.03 Hz, harmonikler(LSB) 26.32 14.10 0.32 0.77 0.11 | THD 53.68 %
+  Z: f0 130.34 Hz, harmonikler(LSB) 2.83 1.32 0.82 0.07 0.13 | THD 55.14 %
+
+yeni_003: aktif 8.8-21.2 s
+  X: f0 100.00 Hz, harmonikler(LSB) 485.72 13.10 17.92 1.32 0.84 | THD 4.58 %
+  Y: f0 100.00 Hz, harmonikler(LSB) 598.33 10.44 15.40 0.26 0.97 | THD 3.11 %
+  Z: f0 100.00 Hz, harmonikler(LSB) 130.03 0.75 0.66 0.24 0.17 | THD 0.80 %
+
+1611_100hz004: aktif 12.2-24.0 s
+  X: f0 100.00 Hz, harmonikler(LSB) 794.20 8.81 0.99 0.35 1.07 | THD 1.12 %
+  Y: f0 100.00 Hz, harmonikler(LSB) 583.12 3.84 8.53 0.28 0.52 | THD 1.61 %
+  Z: f0 100.00 Hz, harmonikler(LSB) 663.24 6.69 4.84 0.26 0.90 | THD 1.25 %
+
+1611_sw003: aktif 13.0-18.5 s
+  X: f0 234.00 Hz, harmonikler(LSB) 14.75 5.53 0.18 0.71 0.53 | THD 38.02 %
+  Y: f0 255.82 Hz, harmonikler(LSB) 15.23 0.73 0.45 0.08 0.11 | THD 5.71 %
+  Z: f0 234.00 Hz, harmonikler(LSB) 15.66 11.86 0.58 0.19 0.22 | THD 75.80 %
+
+yeni_003: bant RMS (aktif, LSB) ve SNR
+     20-   60 Hz  X     2.6  Y     2.2  Z     2.1  | sessiz X 2.58 Y 2.25 Z 2.23 | Z/Y 0.939 X/Y 1.175
+     60-  150 Hz  X   346.6  Y   426.7  Z    92.8  | sessiz X 0.80 Y 1.00 Z 0.81 | Z/Y 0.217 X/Y 0.812
+    150-  400 Hz  X    16.5  Y    13.9  Z     1.4  | sessiz X 1.19 Y 1.10 Z 1.20 | Z/Y 0.102 X/Y 1.185
+    400- 1000 Hz  X     4.9  Y     2.3  Z     1.5  | sessiz X 1.40 Y 1.38 Z 1.49 | Z/Y 0.650 X/Y 2.118
+   1000- 2000 Hz  X     2.8  Y     1.8  Z     1.7  | sessiz X 1.60 Y 1.64 Z 1.66 | Z/Y 0.934 X/Y 1.578
+   2000- 4000 Hz  X     2.3  Y     2.2  Z     2.3  | sessiz X 2.21 Y 2.29 Z 2.32 | Z/Y 1.033 X/Y 1.040
+
+yeni_004: bant RMS (aktif, LSB) ve SNR
+     20-   60 Hz  X     2.8  Y     2.2  Z     2.1  | sessiz X 2.67 Y 2.34 Z 1.96 | Z/Y 0.957 X/Y 1.268
+     60-  150 Hz  X    71.0  Y    47.5  Z    11.0  | sessiz X 0.88 Y 1.19 Z 0.79 | Z/Y 0.231 X/Y 1.493
+    150-  400 Hz  X   301.4  Y   220.1  Z    12.3  | sessiz X 1.21 Y 1.56 Z 0.95 | Z/Y 0.056 X/Y 1.370
+    400- 1000 Hz  X   181.3  Y   124.7  Z     8.7  | sessiz X 1.39 Y 1.62 Z 1.29 | Z/Y 0.070 X/Y 1.454
+   1000- 2000 Hz  X     4.4  Y     2.5  Z     1.6  | sessiz X 1.62 Y 1.72 Z 1.58 | Z/Y 0.644 X/Y 1.754
+   2000- 4000 Hz  X     2.6  Y     2.4  Z     2.2  | sessiz X 2.26 Y 2.38 Z 2.24 | Z/Y 0.942 X/Y 1.101
+
+1611_sw003: bant RMS (aktif, LSB) ve SNR
+     20-   60 Hz  X     2.3  Y     2.7  Z     1.9  | sessiz X 2.35 Y 2.67 Z 1.81 | Z/Y 0.692 X/Y 0.852
+     60-  150 Hz  X    45.6  Y    39.6  Z    27.6  | sessiz X 1.17 Y 1.04 Z 0.99 | Z/Y 0.696 X/Y 1.152
+    150-  400 Hz  X   108.5  Y   137.0  Z   142.0  | sessiz X 1.31 Y 1.27 Z 1.44 | Z/Y 1.037 X/Y 0.792
+    400- 1000 Hz  X    40.6  Y    82.8  Z    98.1  | sessiz X 1.68 Y 1.72 Z 1.95 | Z/Y 1.185 X/Y 0.490
+   1000- 2000 Hz  X     6.5  Y     2.1  Z     3.6  | sessiz X 2.00 Y 2.08 Z 2.05 | Z/Y 1.715 X/Y 3.047
+   2000- 4000 Hz  X     3.3  Y     2.9  Z     2.9  | sessiz X 2.78 Y 2.94 Z 2.90 | Z/Y 1.008 X/Y 1.134
+
+1611_100hz004: bant RMS (aktif, LSB) ve SNR
+     20-   60 Hz  X     2.2  Y     2.5  Z     1.9  | sessiz X 2.33 Y 2.48 Z 1.89 | Z/Y 0.772 X/Y 0.902
+     60-  150 Hz  X   565.0  Y   414.9  Z   471.9  | sessiz X 0.98 Y 1.12 Z 0.89 | Z/Y 1.137 X/Y 1.362
+    150-  400 Hz  X     6.5  Y     7.0  Z     6.2  | sessiz X 1.50 Y 1.29 Z 1.35 | Z/Y 0.884 X/Y 0.930
+    400- 1000 Hz  X     3.1  Y     2.0  Z     4.3  | sessiz X 1.69 Y 1.74 Z 1.73 | Z/Y 2.123 X/Y 1.520
+   1000- 2000 Hz  X     3.3  Y     2.0  Z     2.2  | sessiz X 1.97 Y 2.04 Z 2.04 | Z/Y 1.120 X/Y 1.644
+   2000- 4000 Hz  X     2.9  Y     2.8  Z     2.8  | sessiz X 2.69 Y 2.84 Z 2.82 | Z/Y 1.013 X/Y 1.031
+
+########## cizirti_kontrol.py
+
+16.11 kapi0 sw: 72 blok, sessiz 50
+  X: sessiz bloklar ort|r| pencere/sakin 10.59/2.88, >15 7179/140 | tum bloklar >15 11316/1014, maks 147/92 | tek-ornek sicrama >30: 13262 | sessiz 500-5k RMS 4.10
+  Y: sessiz bloklar ort|r| pencere/sakin 13.89/3.07, >15 8153/109 | tum bloklar >15 13079/1458, maks 200/106 | tek-ornek sicrama >30: 17582 | sessiz 500-5k RMS 4.29
+  Z: sessiz bloklar ort|r| pencere/sakin 13.29/2.94, >15 8043/117 | tum bloklar >15 12823/1594, maks 182/65 | tek-ornek sicrama >30: 17749 | sessiz 500-5k RMS 4.14
+
+16.11 kapi1 sw: 70 blok, sessiz 53
+  X: sessiz bloklar ort|r| pencere/sakin 2.71/3.05, >15 108/223 | tum bloklar >15 837/898, maks 116/108 | tek-ornek sicrama >30: 56 | sessiz 500-5k RMS 4.35
+  Y: sessiz bloklar ort|r| pencere/sakin 2.99/3.16, >15 131/201 | tum bloklar >15 1105/1144, maks 120/85 | tek-ornek sicrama >30: 53 | sessiz 500-5k RMS 4.45
+  Z: sessiz bloklar ort|r| pencere/sakin 2.92/3.13, >15 132/185 | tum bloklar >15 1279/1280, maks 103/101 | tek-ornek sicrama >30: 60 | sessiz 500-5k RMS 4.46
+
+16.11 kapi0 100: 72 blok, sessiz 49
+  X: sessiz bloklar ort|r| pencere/sakin 9.26/2.94, >15 6822/166 | tum bloklar >15 9234/231, maks 141/73 | tek-ornek sicrama >30: 10526 | sessiz 500-5k RMS 4.21
+  Y: sessiz bloklar ort|r| pencere/sakin 12.16/3.18, >15 8059/184 | tum bloklar >15 12039/427, maks 187/129 | tek-ornek sicrama >30: 15911 | sessiz 500-5k RMS 4.44
+  Z: sessiz bloklar ort|r| pencere/sakin 12.39/2.99, >15 7628/124 | tum bloklar >15 11291/201, maks 193/144 | tek-ornek sicrama >30: 15079 | sessiz 500-5k RMS 4.19
+
+16.11 kapi1 100: 80 blok, sessiz 48
+  X: sessiz bloklar ort|r| pencere/sakin 2.73/2.92, >15 91/134 | tum bloklar >15 122/175, maks 61/58 | tek-ornek sicrama >30: 50 | sessiz 500-5k RMS 4.20
+  Y: sessiz bloklar ort|r| pencere/sakin 3.01/3.11, >15 145/152 | tum bloklar >15 162/166, maks 103/102 | tek-ornek sicrama >30: 79 | sessiz 500-5k RMS 4.34
+  Z: sessiz bloklar ort|r| pencere/sakin 2.91/3.12, >15 85/175 | tum bloklar >15 104/200, maks 38/100 | tek-ornek sicrama >30: 55 | sessiz 500-5k RMS 4.44
+
+18.11 100 (003): 72 blok, sessiz 37
+  X: sessiz bloklar ort|r| pencere/sakin 2.12/2.35, >15 20/42 | tum bloklar >15 28/64, maks 32/61 | tek-ornek sicrama >30: 22 | sessiz 500-5k RMS 3.40
+  Y: sessiz bloklar ort|r| pencere/sakin 2.30/2.44, >15 29/37 | tum bloklar >15 35/42, maks 78/50 | tek-ornek sicrama >30: 28 | sessiz 500-5k RMS 3.45
+  Z: sessiz bloklar ort|r| pencere/sakin 2.26/2.44, >15 24/39 | tum bloklar >15 36/55, maks 82/88 | tek-ornek sicrama >30: 45 | sessiz 500-5k RMS 3.56
+
+18.11 sw (004): 68 blok, sessiz 45
+  X: sessiz bloklar ort|r| pencere/sakin 2.16/2.46, >15 31/83 | tum bloklar >15 2275/2359, maks 78/80 | tek-ornek sicrama >30: 210 | sessiz 500-5k RMS 3.54
+  Y: sessiz bloklar ort|r| pencere/sakin 2.36/2.56, >15 38/67 | tum bloklar >15 2101/2168, maks 63/60 | tek-ornek sicrama >30: 35 | sessiz 500-5k RMS 3.74
+  Z: sessiz bloklar ort|r| pencere/sakin 2.28/2.45, >15 17/69 | tum bloklar >15 28/80, maks 86/78 | tek-ornek sicrama >30: 36 | sessiz 500-5k RMS 3.46
