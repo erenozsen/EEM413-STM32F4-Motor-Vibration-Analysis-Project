@@ -1,0 +1,5 @@
+[0 s] ACILIS, reset sebebi: NRST_PINI 
+[0 s] ACILIS, reset sebebi: NRST_PINI 
+[0 s] ACILIS, reset sebebi: NRST_PINI 
+[0 s] ACILIS, reset sebebi: NRST_PINI 
+[2 s] kayit basladi: PIEZO001.BIN

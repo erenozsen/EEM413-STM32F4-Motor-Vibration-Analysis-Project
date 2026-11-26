@@ -1,0 +1,9 @@
+[0 s] ACILIS, reset sebebi: NRST_PINI 
+[8 s] kayit basladi: PIEZO001.BIN
+[0 s] ACILIS, reset sebebi: NRST_PINI 
+[3 s] kayit basladi: PIEZO002.BIN
+[18 s] kayit butonla durduruldu, kayip blok: yok
+[26 s] kayit basladi: PIEZO003.BIN
+[45 s] kayit butonla durduruldu, kayip blok: yok
+[61 s] kayit basladi: PIEZO004.BIN
+[84 s] kayit butonla durduruldu, kayip blok: yok
