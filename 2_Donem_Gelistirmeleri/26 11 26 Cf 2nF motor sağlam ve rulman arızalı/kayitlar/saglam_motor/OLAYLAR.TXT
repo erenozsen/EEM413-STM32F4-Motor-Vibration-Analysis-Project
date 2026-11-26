@@ -1,0 +1,7 @@
+[0 s] ACILIS, reset sebebi: GUC_ACILDI(POR) BESLEME_DUSTU(BOR) NRST_PINI 
+[44 s] kayit basladi: PIEZO001.BIN
+[0 s] ACILIS, reset sebebi: GUC_ACILDI(POR) BESLEME_DUSTU(BOR) NRST_PINI 
+[7 s] kayit basladi: PIEZO002.BIN
+[17 s] kayit butonla durduruldu, kayip blok: yok
+[20 s] kayit basladi: PIEZO003.BIN
+[29 s] kayit butonla durduruldu, kayip blok: yok
